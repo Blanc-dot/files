@@ -4,6 +4,7 @@ iatest=$(expr index "$-" i)
 # Needed
 alias edit='subl -w'
 alias sedit='sudo subl -w'
+alias quit='exit'
 
 # Anime
 alias anime='ani-cli'
@@ -14,12 +15,12 @@ alias sensors2='lscpu -e=CPU,MHZ'
 alias ssdtrim='sudo fstrim -av'
 alias audioreset='systemctl --user restart pipewire pipewire-pulse'
 alias sdup='sudo dnf update'
-alias fixcrackle='pw-metadata -n settings 0 clock.force-quantum 256'
-
+alias fixcrackle='pw-metadata -n settings 0 clock.force-quantum 288'
+alias takefolder='sudo chown -R $USER'
 
 # Apps to call
 alias deadbeef='~/Music/deadbeef-1.9.6/deadbeef'
-alias numix-folders='sudo /home/blanc/.numix-folders/numix-folders'
+alias numix-folders='sudo ~/.numix-folders/numix-folders'
 
 
 #######################################################
@@ -586,3 +587,5 @@ eval "$(zoxide init bash)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
+
+export PATH=$PATH:~/.spicetify
