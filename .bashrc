@@ -13,7 +13,7 @@ alias canime='ani-cli -c'
 # Useful commands
 alias sensors2='lscpu -e=CPU,MHZ'
 alias ssdtrim='sudo fstrim -av'
-alias audioreset='systemctl --user restart pipewire pipewire-pulse'
+alias resetaudio='systemctl --user restart pipewire pipewire-pulse'
 alias sdup='sudo dnf update'
 alias fixcrackle='pw-metadata -n settings 0 clock.force-quantum 288'
 alias takefolder='sudo chown -R $USER'
@@ -589,3 +589,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 
 export PATH=$PATH:~/.spicetify
+
+
+. "$HOME/.cargo/env"
